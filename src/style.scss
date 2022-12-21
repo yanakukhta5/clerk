@@ -1,0 +1,30 @@
+body {
+ min-width: 100vw;
+ min-height: 100vh;
+ background-color: $background;
+ color: $primaryFontColor;
+ font-family: $primaryFont;
+ overflow-x: hidden;
+}
+input {
+ background-color: $inputBackgroud;
+ color: $primaryFontColor;
+ &::placeholder {
+  font-family: $primaryFont;
+  color: $secondaryFontColor;
+ }
+ &[type="submit"]{
+  cursor: pointer;
+ }
+ &:focus-visible{
+  outline: none;
+ }
+}
+
+button {
+ cursor: pointer;
+}
+
+a {
+ cursor: pointer;
+}
