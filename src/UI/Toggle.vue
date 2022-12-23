@@ -8,14 +8,22 @@
    size: {
     type: String,
     default: 'big'
+   },
+   id: {
+    type: String
    }
+  },
+  methods: {
+    changeToggle(event){
+      this.$emit('toggleChange', event.target.checked, event.target.id)
+    }
   }
  }
 </script>
 
 <template>
  <label class="switch" :class="size">
-  <input type="checkbox" class="checkbox" :checked="checked">
+  <input type="checkbox" class="checkbox" :id="id" @click="changeToggle" :checked="checked">
   <span class="slider"></span>
  </label>
 </template>

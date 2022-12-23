@@ -4,8 +4,8 @@ export default {
  data() {
   return {
   linksObj: {
-   '1': 'Хлебные крошки',
-   '2': 'Хлебные крошки',
+   '1': 'Главная',
+   '2': 'Рассылки',
    '3': 'Хлебные крошки'
   }
   }
@@ -25,9 +25,14 @@ export default {
 </template>
 
 <style scoped lang="scss">
+ .breadcrumbs{
+  margin-bottom: 24px;
+  @media (max-width: $sm) {
+   margin-bottom: 8px;
+  }
+ }
  .list {
   display: flex;
   flex-direction: row;
-  margin-bottom: 24px;
  }
 </style>

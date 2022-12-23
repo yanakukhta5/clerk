@@ -18,7 +18,7 @@
 <style scoped lang="scss">
  .card{
   width: clamp(320px, 100%, 476px);
-  height: clamp(244px, 100%, 272px);
+  height: clamp(244px, 100%, 300px);
   border-radius: $cardBorderRadius;
   background-color: $background;
   padding: 24px;

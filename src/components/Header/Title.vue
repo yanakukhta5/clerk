@@ -12,5 +12,9 @@
   font-size: 56px;
   line-height: 72px;
   text-align: center;
+  @media (max-width: $sm){
+   font-size: 32px;
+   line-height: 42px;
+  }
  }
 </style>

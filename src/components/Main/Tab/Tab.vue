@@ -1,9 +1,12 @@
 <script>
  import TabButtons from './Buttons/TabButtons.vue'
- import Containers from './Containers/TabContainers.vue'
+ import Containers from './Containers/Containers.vue'
+ import ContainerSend from './Containers/ContainerSend/ContainerSend.vue'
+ import ContainerSocial from './Containers/ContainerSocial/ContainerSocial.vue'
+ import ContainerMessanger from './Containers/ContainerMessenger/ContainerMessenger.vue'
  export default {
   components: {
-   TabButtons, Containers
+   TabButtons, Containers, ContainerSend, ContainerSocial, ContainerMessanger
   },
   current: 1
  }
@@ -12,7 +15,13 @@
 <template>
  <div class="tab">
   <TabButtons :buttons="['Рассылки', 'Соцсети', 'Мессенджеры']" />
-  <Containers />
+  <Containers>
+   <template v-slot:default>
+    <ContainerSend />
+    <ContainerSocial />
+    <ContainerMessanger />
+   </template>
+  </Containers>
  </div>
 </template>
 

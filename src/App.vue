@@ -25,7 +25,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100vh;
   min-height: 100vh;
 }
 ._container {
@@ -37,5 +36,9 @@ export default {
   flex-direction: column;
   row-gap: 24px;
   margin: 0px auto;
+  @media (max-width: $sm) {
+    row-gap: 0;
+    border-radius: 0;
+  }
 }
 </style>
