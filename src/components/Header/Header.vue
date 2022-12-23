@@ -1,7 +1,7 @@
 <script>
 import Logo from './Logo.vue'
 import Title from './Title.vue'
-import BreadCrumbs from './BreadCrumbs.vue'
+import BreadCrumbs from './BreadCrumbs/BreadCrumbs.vue'
  export default {
   components: {
    Logo, BreadCrumbs, Title

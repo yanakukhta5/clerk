@@ -15,7 +15,7 @@
 
 <template>
  <div class="buttons">
-  <TabButton v-for="(button, index) in buttons" :value="button" :index="index" :class="{button_active: index === 0}" />
+  <TabButton v-for="(button, index) in buttons" :to="button.to" :value="button.name" :index="index" :class="{button_active: index === 0}" />
  </div>
 </template>
 

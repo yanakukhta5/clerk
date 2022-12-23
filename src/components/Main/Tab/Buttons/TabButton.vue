@@ -2,31 +2,27 @@
  export default {
   props: {
    value: String,
-   index: Number
-  },
-  methods: {
-   setActive(event){
-    const current = event.target
-    const prev = document.querySelector('.button_active')
-    prev.classList.remove('button_active')
-    current.classList.add('button_active')
-   }
+   index: Number,
+   to: String
   }
  }
 </script>
 
 <template>
- <button class="button" @click="setActive" :index="index">{{ value }}</button>
+ <router-link :to="to" class="link" @click="setActive" :index="index">{{ value }}</router-link>
 </template>
 
 <style scoped lang="scss">
-.button {
+.link {
+ display: block;
  border: none;
  font-family: $primaryFont;
  background-color: transparent;
  color: $secondaryFontColor;
  padding: 18px 0;
- &_active {
+ text-decoration: none;
+ line-height: 24px;
+ &.router-link-exact-active {
   color: $activeLink;
   border-bottom: 2px solid $activeLink;
   padding: 18px 0 16px 0;

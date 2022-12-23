@@ -11,7 +11,7 @@
   color: $primaryFontColor;
   font-family: $secondaryFont;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
  }
 </style>

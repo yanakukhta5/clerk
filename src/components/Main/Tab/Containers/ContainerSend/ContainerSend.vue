@@ -118,9 +118,7 @@ export default {
 
 <template>
   <section class="send">
-    <ContainerTitle class="card"
-      >Выберите рассылки, которые подходят именно вам</ContainerTitle
-    >
+    <ContainerTitle class="card">Выберите рассылки, которые подходят именно вам</ContainerTitle>
     <Form>
       <template v-slot:addition>
         <div class="cards">
@@ -166,9 +164,6 @@ export default {
 
 <style scoped lang="scss">
 .send {
-  width: 100%;
-  padding: 48px 24px;
-  background-color: $tabBackground;
   &-card {
     @media (max-width: $md){
       width: 100%;
