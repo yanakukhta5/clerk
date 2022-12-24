@@ -7,7 +7,8 @@ import {createRouter, createWebHashHistory} from 'vue-router'
 import Containers from './components/Main/Tab/Containers/Containers.vue'
 
 const routes = [
- { path: '/subscribe/:option?', alias: '/', component: Containers },
+ { name: 'subscribe', path: '/subscribe/:option?', component: Containers },
+ { path: '/', redirect: '/subscribe/sends' }
 ]
 
 const router = createRouter({

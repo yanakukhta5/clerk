@@ -9,7 +9,7 @@
 </script>
 
 <template>
- <router-link :to="'/subscribe/' + to" class="link" :index="index">{{ value }}</router-link>
+ <router-link :to="{name: 'subscribe', params: {option: to}}" class="link" :index="index">{{ value }}</router-link>
 </template>
 
 <style scoped lang="scss">

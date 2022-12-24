@@ -131,7 +131,7 @@ export default {
                 <h2 class="title">{{ card.title }}</h2>
                 <p class="description">{{ card.description }}</p>
                 <ul class="list">
-                  <li class="list-item" v-for="text in card.news">
+                  <li class="list-item" v-for="text in card.news" :key="card.title">
                     <img
                       src="/img/check.svg"
                       alt="Это у нас гарантируется"

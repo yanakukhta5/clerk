@@ -11,7 +11,6 @@ export default {
  },
  updated(){
    this.content = this.$route.params.option
-   console.log(this.content)
  }
 }
 </script>
