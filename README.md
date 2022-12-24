@@ -2,7 +2,7 @@
 
 ## Vue
 ## Vite
-## Schematic layout
+## Adaptive schematic layout
 ## SCSS
 ## Vue router
 ## Yarn
