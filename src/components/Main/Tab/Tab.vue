@@ -11,8 +11,8 @@
 
 <template>
  <div class="tab">
-  <TabButtons :buttons="[{name: 'Рассылки', to: '/'}, {name: 'Соцсети', to: 'socials'}, {name: 'Мессенджеры', to: 'messenger'}]" />
-  <Containers />
+  <TabButtons :buttons="[{name: 'Рассылки', to: 'sends' }, {name: 'Соцсети', to: 'socials'}, {name: 'Мессенджеры', to: 'messengers' }]" />
+  <router-view></router-view>
  </div>
 </template>
 

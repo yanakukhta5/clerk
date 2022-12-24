@@ -4,14 +4,10 @@ import './style.scss'
 import App from './App.vue'
 import {createRouter, createWebHashHistory} from 'vue-router'
 
-import ContainerSend from './components/Main/Tab/Containers/ContainerSend/ContainerSend.vue'
-import ContainerMessenger from './components/Main/Tab/Containers/ContainerMessenger/ContainerMessenger.vue'
-import ContainerSocial from './components/Main/Tab/Containers/ContainerSocial/ContainerSocial.vue'
+import Containers from './components/Main/Tab/Containers/Containers.vue'
 
 const routes = [
- { path: '/send', alias: '/', component: ContainerSend },
- { path: '/messenger', component: ContainerMessenger },
- { path: '/socials', component: ContainerSocial },
+ { path: '/subscribe/:option?', alias: '/', component: Containers },
 ]
 
 const router = createRouter({
